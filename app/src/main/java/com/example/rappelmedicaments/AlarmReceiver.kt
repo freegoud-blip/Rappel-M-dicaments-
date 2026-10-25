@@ -21,7 +21,7 @@ class AlarmReceiver : BroadcastReceiver() {
         nm.notify(
             r.code,
             NotificationCompat.Builder(c, "meds")
-                .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
+                .setSmallIcon(R.drawable.ic_stat_pill)
                 .setContentTitle("💊 C'est l'heure de vos médicaments")
                 .setContentText(r.nom)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
